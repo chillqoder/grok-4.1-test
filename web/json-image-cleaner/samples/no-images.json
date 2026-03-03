@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "No Images",
+    "description": "Plain text object",
+    "tags": ["a", "b"]
+  },
+  {
+    "id": 2,
+    "name": "Nested No Images",
+    "data": {
+      "foo": "bar",
+      "nested": {
+        "empty": true
+      }
+    }
+  }
+]

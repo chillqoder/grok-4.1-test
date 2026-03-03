@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Valid Image Item",
+    "description": "This item has valid images",
+    "image": "https://via.placeholder.com/400x300/4F46E5/FFFFFF?text=Valid+1",
+    "thumbnail": "https://via.placeholder.com/150x150/4F46E5/FFFFFF?text=V1"
+  },
+  {
+    "id": 2,
+    "title": "Another Valid",
+    "image": "https://picsum.photos/400/300?random=1",
+    "gallery": [
+      "https://picsum.photos/200/200?random=2",
+      "https://picsum.photos/200/200?random=3"
+    ]
+  }
+]

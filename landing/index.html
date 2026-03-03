@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грузоперевозки - Надежно, Быстро, Выгодно | TransLogistics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Nav -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary">TransLogistics</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary">Главная</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary">Услуги</a>
+                    <a href="#prices" class="text-gray-700 hover:text-primary">Цены</a>
+                    <a href="#contacts" class="text-gray-700 hover:text-primary">Контакты</a>
+                </div>
+                <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white shadow-lg py-4 px-4 space-y-4 border-t">
+                    <a href="#home" class="block py-2 text-gray-700 hover:text-primary">Главная</a>
+                    <a href="#services" class="block py-2 text-gray-700 hover:text-primary">Услуги</a>
+                    <a href="#prices" class="block py-2 text-gray-700 hover:text-primary">Цены</a>
+                    <a href="#contacts" class="block py-2 text-gray-700 hover:text-primary">Контакты</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="pt-16 pb-20 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1920x1080/?truck,logistics');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <div class="bg-black/40 p-8 rounded-2xl backdrop-blur-sm">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Грузоперевозки</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Надежные перевозки грузов по России и СНГ. Авто, ЖД, Авиа, Море. Быстро. Безопасно. Выгодно.</p>
+                <a href="#contacts" class="bg-secondary text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-orange-500 transition duration-300 inline-block">Рассчитать стоимость</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-gray-800 mb-16">Наши услуги</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition">
+                    <i class="fas fa-truck text-5xl text-primary mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-4">Автоперевозки</h3>
+                    <p>Полуприцепы, рефрижераторы, тенты. До 20 тонн.</p>
+                </div>
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition">
+                    <i class="fas fa-train text-5xl text-primary mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-4">Железнодорожные</h3>
+                    <p>Контейнеры, вагоны. Крупногабаритные грузы.</p>
+                </div>
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition">
+                    <i class="fas fa-plane text-5xl text-primary mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-4">Авиаперевозки</h3>
+                    <p>Срочная доставка. До 48 часов.</p>
+                </div>
+                <div class="text-center p-8 bg-gray-50 rounded-2xl hover:shadow-xl transition">
+                    <i class="fas fa-ship text-5xl text-primary mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-4">Морские</h3>
+                    <p>Контейнеры, Ro-Ro. Международные маршруты.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="py-20 bg-gradient-to-r from-primary to-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">Почему выбирают нас?</h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">5000+</div>
+                    <p>Перевозок в год</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">99.9%</div>
+                    <p>В срок</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">24/7</div>
+                    <p>Поддержка</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">от 10₽/кг</div>
+                    <p>За кг</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="prices" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-gray-800 mb-16">Тарифы</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Авто (Москва-СПб)</h3>
+                    <div class="text-3xl font-bold text-primary mb-4">от 25 000₽</div>
+                    <ul class="space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500"></i> 1-20 тонн</li>
+                        <li><i class="fas fa-check text-green-500"></i> 2-3 дня</li>
+                    </ul>
+                    <a href="#contacts" class="w-full bg-primary text-white py-3 rounded-xl block text-center hover:bg-blue-700">Заказать</a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">ЖД (Москва-Екб)</h3>
+                    <div class="text-3xl font-bold text-primary mb-4">от 15 000₽</div>
+                    <ul class="space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500"></i> До 60 тонн</li>
+                        <li><i class="fas fa-check text-green-500"></i> 5-7 дней</li>
+                    </ul>
+                    <a href="#contacts" class="w-full bg-primary text-white py-3 rounded-xl block text-center hover:bg-blue-700">Заказать</a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Авиа (СПб-Мск)</h3>
+                    <div class="text-3xl font-bold text-primary mb-4">от 50 000₽</div>
+                    <ul class="space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500"></i> До 1 тонны</li>
+                        <li><i class="fas fa-check text-green-500"></i> 1 день</li>
+                    </ul>
+                    <a href="#contacts" class="w-full bg-primary text-white py-3 rounded-xl block text-center hover:bg-blue-700">Заказать</a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Морские (Владивосток-Европа)</h3>
+                    <div class="text-3xl font-bold text-primary mb-4">от 100 000₽</div>
+                    <ul class="space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500"></i> 20-40 тонн</li>
+                        <li><i class="fas fa-check text-green-500"></i> 20-30 дней</li>
+                    </ul>
+                    <a href="#contacts" class="w-full bg-primary text-white py-3 rounded-xl block text-center hover:bg-blue-700">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Свяжитесь с нами</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Контакты</h3>
+                    <p class="mb-4"><i class="fas fa-phone mr-3 text-primary"></i>+7 (495) 123-45-67</p>
+                    <p class="mb-4"><i class="fas fa-envelope mr-3 text-primary"></i>info@translog.ru</p>
+                    <p class="mb-4"><i class="fas fa-map-marker-alt mr-3 text-primary"></i>Москва, ул. Логистики, 1</p>
+                </div>
+                <form class="space-y-4" action="https://formspree.io/f/YOUR_ID" method="POST">
+                    <input type="text" name="name" placeholder="Имя" required class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary">
+                    <input type="email" name="email" placeholder="Email" required class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary">
+                    <input type="tel" name="phone" placeholder="Телефон" required class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary">
+                    <textarea name="message" placeholder="Сообщение" rows="5" class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                    <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-semibold hover:bg-blue-700 transition">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 TransLogistics. Все права защищены.</p>
+        </div>
+    </footer>
+
+        AOS.init({duration: 1200});
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                if (mobileMenu) mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>

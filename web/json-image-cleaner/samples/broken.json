@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "title": "Broken Image",
+    "image": "https://invalid-url-does-not-exist.example.com/image.jpg",
+    "thumbnail": "http://broken-link.com/thumb.png"
+  },
+  {
+    "id": 2,
+    "title": "404 Image",
+    "image": "https://httpstat.us/404"
+  }
+]

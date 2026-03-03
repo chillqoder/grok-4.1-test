@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'core/theme.dart';
+import 'screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,16 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Empty Project',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Empty Project'),
-        ),
-      ),
+      title: 'Premium Movie App',
+      theme: AppTheme.theme,
+      home: const MainScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
